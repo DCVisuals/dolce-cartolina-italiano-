@@ -235,3 +235,269 @@ a{color:inherit; text-decoration:none}
   will-change: transform;
 }
 .float--1{right: 14px; top: 14px}
+.float--2{left:  10px; bottom: 22px}
+.float--3{right: 28px; bottom: 42px}
+.float--4{left:  18px; top:  32px}
+
+/* Scroll hint */
+.scrollhint{
+  position:absolute;
+  left:50%;
+  bottom: 14px;
+  transform: translateX(-50%);
+  display:flex; align-items:center; gap:10px;
+  color: rgba(15,26,22,.62);
+  font-weight: 700;
+  font-size: .95rem;
+}
+.scrollhint__arrow{width:18px; height:18px; opacity:.75; transform: rotate(90deg);}
+
+/* Split blocks like PDF (green + red panels) */
+.section--split{background: linear-gradient(180deg, rgba(1,152,102,.10), rgba(221,72,72,.08));}
+.split{display:grid; grid-template-columns: 1fr 1fr; gap:14px; margin-top:14px}
+.split--reverse{grid-template-columns: 1fr 1fr}
+.split__panel{
+  border-radius: calc(var(--radius) + 6px);
+  padding: 20px;
+  border: 1px solid rgba(15,26,22,.10);
+  box-shadow: 0 10px 40px rgba(0,0,0,.06);
+  background:#fff;
+}
+.split__panel--green{
+  background: rgba(1,152,102,.92);
+  color:#fff;
+  border-color: rgba(255,255,255,.18);
+}
+.split__panel--red{
+  background: rgba(221,72,72,.92);
+  color:#fff;
+  border-color: rgba(255,255,255,.18);
+}
+.split__panel--paper{
+  background:#fff;
+}
+.split__panel p{opacity:.98}
+.split__panel--green p, .split__panel--red p{color:rgba(255,255,255,.92)}
+
+/* Callout */
+.callout{
+  margin-top:14px;
+  padding:14px;
+  border-radius: 16px;
+  border:1px solid rgba(15,26,22,.10);
+  background: rgba(255,255,255,.92);
+  color:#111;
+}
+.callout--red{
+  border-color: rgba(255,255,255,.18);
+  background: rgba(245,214,129,.92);
+}
+
+/* FAQ */
+.faq details{
+  background:#fff;
+  border:1px solid rgba(15,26,22,.10);
+  border-radius: 16px;
+  padding: 12px 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.05);
+  margin: 10px 0;
+}
+.faq summary{
+  cursor:pointer;
+  font-weight: 800;
+  list-style:none;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq p{margin:10px 0 0; color:rgba(15,26,22,.78)}
+
+/* Quotes */
+.quote{
+  background: rgba(255,255,255,.14);
+  border:1px solid rgba(255,255,255,.22);
+  border-radius: calc(var(--radius) + 6px);
+  padding: 18px;
+  color:#fff;
+  box-shadow: 0 18px 60px rgba(0,0,0,.12);
+  backdrop-filter: blur(10px);
+}
+.quote blockquote{margin:10px 0; opacity:.96}
+.quote figcaption{opacity:.9; font-weight:800}
+.stars{letter-spacing:2px}
+
+/* Big quote */
+.big-quote{
+  font-size: 1.05rem;
+  line-height: 1.55;
+  color: rgba(255,255,255,.92);
+}
+
+/* CTA */
+.cta{
+  background: linear-gradient(180deg, rgba(1,152,102,.10), rgba(221,72,72,.08));
+  border:1px solid rgba(15,26,22,.10);
+  border-radius:calc(var(--radius) + 10px);
+  padding:26px;
+  box-shadow:var(--shadow);
+}
+.cta__row{display:flex; gap:12px; flex-wrap:wrap; margin-top:12px}
+.fineprint{color:rgba(15,26,22,.62); font-size:.92rem; margin-top:16px}
+.contactgrid{display:grid; grid-template-columns: 1fr 1fr; gap:10px; margin-top:14px}
+.contactitem{
+  background: rgba(255,255,255,.86);
+  border:1px solid rgba(15,26,22,.08);
+  border-radius: 14px;
+  padding:12px;
+}
+
+/* Center CTA */
+.center-cta{display:flex; justify-content:center; margin-top:16px}
+
+/* Ribbons sliding from sides */
+.ribbon{
+  position:absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: min(520px, 88vw);
+  pointer-events:none;
+  opacity:0;
+}
+.ribbon--left{left:-560px}
+.ribbon--right{right:-560px}
+.ribbon__inner{
+  display:flex; align-items:center; gap:10px;
+  padding:14px 16px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.92);
+  border:1px solid rgba(15,26,22,.10);
+  box-shadow: var(--shadow);
+  font-weight: 800;
+}
+.ribbon__inner img{width:20px; height:20px; opacity:.85}
+
+/* Reveal animations */
+.reveal{
+  opacity:0;
+  transform: translateY(12px);
+  transition: opacity .7s ease, transform .7s ease;
+}
+.reveal.is-in{opacity:1; transform: translateY(0);}
+
+/* ---------------------------
+   PLAY-ON-ENTER animations (2–5s then stop)
+   We only animate when section has .play
+--------------------------- */
+
+/* arrow nudge: run 2.2s once */
+.section-play.play .bubble__arrow{
+  animation: arrowNudgeOnce 2.2s ease-in-out 1 both;
+}
+@keyframes arrowNudgeOnce{
+  0%{ transform: translateX(0); }
+  40%{ transform: translateX(4px); }
+  60%{ transform: translateX(2px); }
+  100%{ transform: translateX(0); }
+}
+
+/* scroll hint arrow: 3s once */
+.section-play.play .scrollhint__arrow{
+  animation: downHintOnce 3s ease-in-out 1 both;
+}
+@keyframes downHintOnce{
+  0%{ transform: translateY(0) rotate(90deg); opacity:.65; }
+  40%{ transform: translateY(6px) rotate(90deg); opacity:.9; }
+  100%{ transform: translateY(0) rotate(90deg); opacity:.75; }
+}
+
+/* floating containers: 4.5s once */
+.section-play.play .float{
+  animation: floatyOnce 4.5s ease-in-out 1 both;
+}
+@keyframes floatyOnce{
+  0%{ transform: translateY(0) translateX(0); }
+  40%{ transform: translateY(-10px) translateX(2px); }
+  100%{ transform: translateY(0) translateX(0); }
+}
+
+/* icon micro-motions: each 3–5s once */
+.section-play.play .ico--spin{ animation: spinOnce 4.8s ease-in-out 1 both; }
+@keyframes spinOnce{
+  0%{ transform: rotate(0deg); }
+  70%{ transform: rotate(360deg); }
+  100%{ transform: rotate(360deg); }
+}
+
+.section-play.play .ico--wobble{ animation: wobbleOnce 3.6s ease-in-out 1 both; }
+@keyframes wobbleOnce{
+  0%{ transform: rotate(0deg) translateY(0); }
+  35%{ transform: rotate(-4deg) translateY(-2px); }
+  70%{ transform: rotate(4deg) translateY(-1px); }
+  100%{ transform: rotate(0deg) translateY(0); }
+}
+
+.section-play.play .ico--drift{ animation: driftOnce 4.2s ease-in-out 1 both; }
+@keyframes driftOnce{
+  0%{ transform: translateX(0) rotate(0deg); }
+  55%{ transform: translateX(6px) rotate(2deg); }
+  100%{ transform: translateX(0) rotate(0deg); }
+}
+
+.section-play.play .ico--pulse{ animation: pulseOnce 3.2s ease-in-out 1 both; }
+@keyframes pulseOnce{
+  0%{ transform: scale(1); opacity:.92; }
+  50%{ transform: scale(1.08); opacity:1; }
+  100%{ transform: scale(1); opacity:.92; }
+}
+
+/* ribbons slide in: 2.8s once */
+.section-play.play .ribbon--left{
+  animation: ribbonInLeft 2.8s cubic-bezier(.2,.9,.2,1) 1 both;
+}
+@keyframes ribbonInLeft{
+  0%{ transform: translate(-30px,-50%); opacity:0; }
+  40%{ transform: translate(600px,-50%); opacity:1; }
+  100%{ transform: translate(560px,-50%); opacity:1; }
+}
+
+.section-play.play .ribbon--right{
+  animation: ribbonInRight 2.8s cubic-bezier(.2,.9,.2,1) 1 both;
+}
+@keyframes ribbonInRight{
+  0%{ transform: translate(30px,-50%); opacity:0; }
+  40%{ transform: translate(-600px,-50%); opacity:1; }
+  100%{ transform: translate(-560px,-50%); opacity:1; }
+}
+
+/* Responsive */
+@media (max-width: 920px){
+  .hero__grid{grid-template-columns: 1fr;}
+  .grid--3, .grid--2{grid-template-columns: 1fr;}
+  .split{grid-template-columns: 1fr;}
+  .contactgrid{grid-template-columns: 1fr;}
+  .nav{display:none}
+  .burger{display:block}
+
+  .nav.is-open{
+    position:absolute;
+    right:14px; top:64px;
+    display:flex; flex-direction:column; gap:10px;
+    padding:14px;
+    background:var(--paper);
+    border:1px solid rgba(15,26,22,.10);
+    border-radius:18px;
+    box-shadow:var(--shadow);
+  }
+
+  /* reduce float clutter on small screens */
+  .float--4{display:none}
+  .ribbon{display:none}
+}
+
+/* Respect accessibility */
+@media (prefers-reduced-motion: reduce){
+  .reveal, .section-play.play .float, .section-play.play .ico--spin, .section-play.play .ico--wobble,
+  .section-play.play .ico--drift, .section-play.play .ico--pulse, .section-play.play .bubble__arrow,
+  .section-play.play .scrollhint__arrow, .section-play.play .ribbon--left, .section-play.play .ribbon--right{
+    animation: none !important;
+    transition: none !important;
+  }
+}

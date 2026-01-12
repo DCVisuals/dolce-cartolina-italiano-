@@ -15,73 +15,75 @@
 </head>
 
 <body>
-  <header class="topbar">
-    <a class="brand" href="#top" aria-label="Do góry">
-      <span class="brand__flag" aria-hidden="true">🇮🇹</span>
-      <span class="brand__text">
-        <strong>DOLCE CARTOLINA</strong>
-        <small>Szkoła języka włoskiego</small>
-      </span>
-    </a>
+<header class="topbar">
+  <a class="brand" href="#top" aria-label="Do góry">
+    <span class="brand__flag" aria-hidden="true">🇮🇹</span>
+    <span class="brand__text">
+      <strong>DOLCE CARTOLINA</strong>
+      <small>Szkoła języka włoskiego</small>
+    </span>
+  </a>
 
-    <button class="burger" aria-label="Otwórz menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
+  <button class="burger" aria-label="Otwórz menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
 
-    <nav class="nav" aria-label="Nawigacja">
-      <a href="#o-mnie">O mnie</a>
-      <a href="#wyksztalcenie">Wykształcenie</a>
-      <a href="#uslugi">Usługi</a>
-      <a href="#wspolpraca">Współpraca</a>
-      <a href="#faq">FAQ</a>
-      <a href="#opinie">Opinie</a>
-      <a href="#kontakt" class="nav__cta">Kontakt</a>
-    </nav>
-  </header>
+  <nav class="nav" aria-label="Nawigacja">
+    <a href="#o-mnie">O mnie</a>
+    <a href="#wyksztalcenie">Wykształcenie</a>
+    <a href="#uslugi">Usługi</a>
+    <a href="#wspolpraca">Współpraca</a>
+    <a href="#faq">FAQ</a>
+    <a href="#opinie">Opinie</a>
+    <a href="#kontakt" class="nav__cta">Kontakt</a>
+  </nav>
+</header>
 
-  <main id="top">
-    <!-- HERO -->
-    <section class="hero section-play">
-      <div class="hero__bg" aria-hidden="true"></div>
+<main id="top">
 
-      <div class="container hero__grid">
-        <div class="hero__content">
-          <div class="bubbles reveal">
-            <span class="bubble">
-              <img src="assets/speech-bubble-16-svgrepo-com.svg" alt="" aria-hidden="true">
-              Ciao!
-            </span>
-            <span class="bubble bubble--accent">
-              Parli l’italiano?
-              <img class="bubble__arrow" src="assets/arrow-03-svgrepo-com.svg" alt="" aria-hidden="true">
-            </span>
-          </div>
+  <!-- HERO -->
+  <section class="hero section-play">
+    <div class="hero__bg" aria-hidden="true"></div>
 
-          <h1 class="reveal">Nauczę Cię mówić po włosku!</h1>
-
-          <p class="lead reveal">
-            Nauczanie na wszystkich poziomach od A1 do C2. Przygotowanie do matury (podstawowej i rozszerzonej)
-            oraz do egzaminów CILS, CELI, PLIDA. Konwersacje, tłumaczenia i wsparcie akademickie.
-          </p>
-
-          <div class="hero__cta reveal">
-            <a class="btn" href="#kontakt">Skontaktuj się</a>
-            <a class="btn btn--ghost" href="#uslugi">Zobacz usługi</a>
-          </div>
-
-          <div class="badges reveal" aria-label="Atuty">
-            <div class="badge">A1–C2</div>
-            <div class="badge">Dorośli + młodzież</div>
-            <div class="badge">Online (Teams)</div>
-          </div>
+    <div class="container hero__grid">
+      <div class="hero__content">
+        <div class="bubbles reveal">
+          <span class="bubble">
+            <img src="assets/speech-bubble-16-svgrepo-com.svg" alt="" aria-hidden="true">
+            Ciao!
+          </span>
+          <span class="bubble bubble--accent">
+            Parli l’italiano?
+            <img class="bubble__arrow" src="assets/arrow-03-svgrepo-com.svg" alt="" aria-hidden="true">
+          </span>
         </div>
 
-        <div class="hero__visual reveal">
-          <div class="photo hero__photo">
-            <img src="assets/hero.jpg" alt="Dolce Cartolina — Włochy" />
+        <h1 class="reveal">Nauczę Cię mówić po włosku!</h1>
+
+        <p class="lead reveal">
+          Nauczanie na wszystkich poziomach od A1 do C2. Przygotowanie do matury (podstawowej i rozszerzonej)
+          oraz do egzaminów CILS, CELI, PLIDA. Konwersacje, tłumaczenia i wsparcie akademickie.
+        </p>
+
+        <div class="hero__cta reveal">
+          <a class="btn" href="#kontakt">Skontaktuj się</a>
+          <a class="btn btn--ghost" href="#uslugi">Zobacz usługi</a>
+        </div>
+
+        <div class="badges reveal" aria-label="Atuty">
+          <div class="badge">A1–C2</div>
+          <div class="badge">Dorośli + młodzież</div>
+          <div class="badge">Online (Teams)</div>
+        </div>
+      </div>
+
+      <div class="hero__visual reveal">
+        <div class="heroCard">
+          <div class="heroCard__media">
+            <img src="assets/img/hero.jpg" alt="Dolce Cartolina — Włochy" />
           </div>
 
-          <!-- floating icons: play only when section enters viewport -->
+          <!-- Floating icons (contained) -->
           <div class="float float--1" aria-hidden="true">
             <img src="assets/coliseum-rome-svgrepo-com.svg" alt="" class="ico ico--spin" />
           </div>
@@ -96,494 +98,444 @@
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="scrollhint reveal" aria-hidden="true">
-        <span>Przewiń</span>
-        <img src="assets/arrow-03-svgrepo-com.svg" alt="" class="scrollhint__arrow">
+    <div class="scrollhint reveal" aria-hidden="true">
+      <span>Przewiń</span>
+      <img src="assets/arrow-03-svgrepo-com.svg" alt="" class="scrollhint__arrow">
+    </div>
+  </section>
+
+  <!-- O MNIE -->
+  <section id="o-mnie" class="section section--paper section-play">
+    <div class="container grid grid--2 align-center">
+      <div class="reveal">
+        <h2>O mnie</h2>
+        <p class="muted">
+          Nazywam się Eliza Giussani. Z wykształcenia jestem filologiem włoskim o wielu pasjach.
+          Nauczać zaczęłam już na studiach, czyli w 2011 roku. Choć zaczynałam od pracy z dziećmi,
+          to dziś specjalizuję się wyłącznie w zajęciach dla dorosłych oraz młodzieży.
+        </p>
+
+        <div class="chips">
+          <span class="chip chip--green">Od 2011</span>
+          <span class="chip chip--red">Dorośli</span>
+          <span class="chip chip--yellow">Młodzież</span>
+        </div>
       </div>
-    </section>
 
-    <!-- O MNIE -->
-    <section id="o-mnie" class="section section--paper section-play">
-      <div class="container grid grid--2">
-        <div class="reveal">
-          <h2>O mnie</h2>
-          <p class="muted">
-            Nazywam się Eliza Giussani. Z wykształcenia jestem filologiem włoskim o wielu pasjach.
-            Nauczać zaczęłam już na studiach, czyli w 2011 roku. Choć zaczynałam od pracy z dziećmi,
-            to dziś specjalizuję się wyłącznie w zajęciach dla dorosłych oraz młodzieży.
+      <div class="profileCard reveal">
+        <div class="profileCard__photo">
+          <img src="assets/img/eliza.jpg" alt="Eliza Giussani" />
+        </div>
+        <div class="profileCard__quote">
+          <p class="profileCard__text">
+            „Prawdziwe nauczanie to nie mówienie jak masz coś zrobić, a inspirowanie i wskazywanie drogi.”
           </p>
-
-          <div class="chips">
-            <span class="chip chip--green">Od 2011</span>
-            <span class="chip chip--red">Dorośli</span>
-            <span class="chip chip--yellow">Młodzież</span>
-          </div>
-        </div>
-
-        <div class="card photo2 reveal">
-          <img src="assets/eliza.jpg" alt="Eliza Giussani" />
+          <p class="profileCard__name">Eliza Giussani</p>
         </div>
       </div>
+    </div>
+  </section>
 
-      <!-- side ribbons -->
-      <div class="ribbon ribbon--left section-play__ribbon" aria-hidden="true">
-        <div class="ribbon__inner">
-          <strong>Ciao!</strong> Przeczytaj, gdzie studiowałam →
-        </div>
-      </div>
-    </section>
-
-    <!-- WYKSZTAŁCENIE + KURSY -->
-    <section id="wyksztalcenie" class="section section--green section-play">
-      <div class="container">
-        <div class="section__head reveal">
-          <h2>Wykształcenie i kursy metodyczne</h2>
-          <p class="muted muted--on-green">Konkretnie, z datami — jak w PDF.</p>
-        </div>
-
-        <div class="grid grid--2">
-          <div class="card card--glass reveal">
-            <h3>Wykształcenie</h3>
-            <ul class="list">
-              <li><strong>2009–2012</strong> — Licencjat z italianistyki ukończony w Wyższej Szkole Studiów Międzynarodowych w Łodzi</li>
-              <li><strong>2011</strong> — Półroczne stypendium Erasmus na Università degli Studi di Macerata (Facoltà di Lettere e Filosofia)</li>
-              <li><strong>2012–2014</strong> — Magister z italianistyki ukończony na Uniwersytecie Warszawskim</li>
-            </ul>
-          </div>
-
-          <div class="card card--glass reveal">
-            <h3>Kursy i szkolenia metodyczne</h3>
-            <ul class="list">
-              <li><strong>2022</strong> — “Mistrz coachingu” (akredytacja ICF)</li>
-              <li><strong>2023</strong> — Nowoczesne metody nauczania języków obcych (Oświata-Lingwista)</li>
-              <li><strong>2023</strong> — Pamięć i języki: pomysły, praktyki, narzędzia (Edunation)</li>
-              <li><strong>2023</strong> — Akademia nauczania dorosłych (Edunation)</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="center-cta reveal">
-          <a class="btn btn--yellow" href="#uslugi">
-            Zobacz jak mogę Ci pomóc
-            <img class="btn__icon" src="assets/arrow-03-svgrepo-com.svg" alt="" aria-hidden="true">
-          </a>
-        </div>
+  <!-- WYKSZTAŁCENIE -->
+  <section id="wyksztalcenie" class="section section--green section-play">
+    <div class="container">
+      <div class="section__head reveal center">
+        <h2>Wykształcenie i kursy metodyczne</h2>
+        <p class="muted muted--on">Konkretnie, z datami — jak w PDF.</p>
       </div>
 
-      <div class="ribbon ribbon--right section-play__ribbon" aria-hidden="true">
-        <div class="ribbon__inner">
-          <img src="assets/eye-mask-mask-svgrepo-com.svg" alt="" aria-hidden="true">
-          <span>Włoski skutecznie. Bez chaosu.</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- USŁUGI -->
-    <section id="uslugi" class="section section--paper section-play">
-      <div class="container">
-        <div class="section__head reveal">
-          <h2>Moje włoskie usługi</h2>
-          <p class="muted">Nauczanie od A1 do C2, matura, egzaminy, uczelnia, konwersacje, tłumaczenia.</p>
-        </div>
-
-        <div class="grid grid--3">
-          <article class="card reveal">
-            <div class="card__ico"><img src="assets/pasta-svgrepo-com.svg" class="ico" alt="" aria-hidden="true"></div>
-            <h3>A1–C2</h3>
-            <p>Nauczanie na wszystkich poziomach od A1 do C2.</p>
-          </article>
-
-          <article class="card reveal">
-            <div class="card__ico"><img src="assets/tomato-svgrepo-com.svg" class="ico" alt="" aria-hidden="true"></div>
-            <h3>Matura</h3>
-            <p>Przygotowanie do matury podstawowej i rozszerzonej.</p>
-          </article>
-
-          <article class="card reveal">
-            <div class="card__ico"><img src="assets/pizza-svgrepo-com.svg" class="ico" alt="" aria-hidden="true"></div>
-            <h3>CILS / CELI / PLIDA</h3>
-            <p>Przygotowanie do egzaminów językowych CILS, CELI, PLIDA.</p>
-          </article>
-
-          <article class="card reveal">
-            <div class="card__ico"><img src="assets/olive-oil-svgrepo-com.svg" class="ico" alt="" aria-hidden="true"></div>
-            <h3>Uczelnia</h3>
-            <p>Przygotowanie do egzaminów i zaliczeń na uczelniach wyższych.</p>
-          </article>
-
-          <article class="card reveal">
-            <div class="card__ico"><img src="assets/speech-bubble-16-svgrepo-com.svg" class="ico" alt="" aria-hidden="true"></div>
-            <h3>Konwersacje</h3>
-            <p>Dużo mówienia i słuchania — tematy dopasowane do Ciebie.</p>
-          </article>
-
-          <article class="card reveal">
-            <div class="card__ico"><img src="assets/coliseum-rome-svgrepo-com.svg" class="ico" alt="" aria-hidden="true"></div>
-            <h3>Tłumaczenia</h3>
-            <p>Tłumaczenia i praca z tekstem — w zależności od celu.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- WSPÓŁPRACA / PROGRAM / LEKCJE -->
-    <section id="wspolpraca" class="section section--split section-play">
-      <div class="container">
-        <div class="section__head reveal">
-          <h2>Jak wygląda nasza współpraca?</h2>
-          <p class="muted">Program nauczania, struktura lekcji, notatki, prace domowe, materiały.</p>
-        </div>
-
-        <div class="split">
-          <div class="split__panel split__panel--green reveal">
-            <h3>Program nauczania</h3>
-            <p>
-              To jak dokładnie wyglądają lekcje i co na nich robimy zależy od Twojego poziomu, tempa nauki,
-              potrzeb, celu oraz preferowanego sposobu uczenia się.
-            </p>
-            <p>
-              Z osobami początkującymi lub takimi, które włoski już znają, ale potrzebują uzupełnić swoją wiedzę
-              pracuję na podręczniku <strong>Nuovissimo Progetto Italiano</strong> oraz wielu innych materiałach,
-              w tym także moich autorskich. Dzięki temu poziom jest dostosowany do umiejętności ucznia, a nauka zorganizowana.
-            </p>
-            <p>
-              Główne obszary to przede wszystkim <strong>mówienie i słuchanie</strong>. Gdy trzeba pojawia się gramatyka (teoria + 1–2 zadania),
-              a pisanie, tłumaczenia i ćwiczenia z przerobionym materiałem zostają do domu.
-            </p>
-          </div>
-
-          <div class="split__panel split__panel--red reveal">
-            <h3>Czy naprawdę musimy uczyć się gramatyki?</h3>
-            <p>
-              Tak. Znajomość podstawowych zasad gramatycznych (baza) pozwala w przyszłości na samodzielne “kombinowanie” z językiem.
-              Dzięki temu na pewnym etapie nowe rzeczy przyswajasz automatycznie, a rozmowy z Włochami stają się łatwe, przyjemne i bezstresowe.
-              Wiedza gramatyczna wyrabia też nawyk autokorekty, więc szybciej nauczysz się poprawnie mówić.
-            </p>
-            <p>
-              Spokojnie — nie katuję sztywnymi regułami. Wyjątki poznajemy stopniowo w trakcie procesu.
-            </p>
-          </div>
-        </div>
-
-        <div class="split split--reverse">
-          <div class="split__panel split__panel--paper reveal">
-            <h3>Struktura lekcji</h3>
-            <ul class="list">
-              <li><strong>5–10 min</strong> — rozgrzewka + powtórka (gry, wypowiedzi ustne, tłumaczenia)</li>
-              <li><strong>~45 min</strong> — praca zgodnie z programem / powtórki / wyjaśnianie trudności (pełna elastyczność)</li>
-              <li><strong>5 min</strong> — podsumowanie + utrwalenie (gry lub tłumaczenia z nowym materiałem)</li>
-            </ul>
-          </div>
-
-          <div class="split__panel split__panel--paper reveal">
-            <h3>Notatki z lekcji</h3>
-            <p>
-              Przez całe 60 minut zapisuję dla Ciebie nowe słówka, wyrażenia, czasem zasady z gramatyki, fonetyki oraz błędy.
-              Po lekcji wysyłam wszystko w dokumencie tekstowym — powstaje Twój <strong>Personalizowany Słownik</strong>.
-              Na początku kolejnych zajęć wracamy do tego, co było.
-            </p>
-
-            <h3 class="mt">Prace domowe</h3>
-            <p>
-              W zależności od poziomu i czasu: tłumaczenia, gramatyka, małe wypracowanie. Do części zadań dodaję klucze.
-              Inne wysyłasz mailem w formie skanu/zdjęcia — sprawdzam w ciągu tygodnia (maksymalnie dwóch) i odsyłam do analizy.
-              Mam też wiele materiałów dodatkowych — jeśli chcesz powtórki, daj znać.
-            </p>
-          </div>
-        </div>
-
-        <div class="card card--wide reveal">
-          <h3>Materiały</h3>
-          <p>
-            Nie musisz kupować książek — wszystko wysyłam z wyprzedzeniem. Dla lepszej organizacji udostępniam materiały większymi partiami
-            (np. całe rozdziały). Dodatkowo czasem “ascolto” (słuchanki) i inne przydatne rzeczy.
-          </p>
-          <p>
-            Materiały wysyłam przez e-mail lub SwissTransfer. Możesz drukować lub pracować cyfrowo — ważne, by było wygodnie i bez bałaganu
-            (spięte kartki / folder na dysku).
-          </p>
-        </div>
-
-        <div class="card card--wide reveal">
-          <h3>Co jeszcze musisz wiedzieć?</h3>
+      <div class="grid grid--2">
+        <div class="glassCard reveal">
+          <h3>Wykształcenie</h3>
           <ul class="list">
-            <li>O trudnościach i prośbach informuj mnie na bieżąco — jestem po to, by pomóc.</li>
-            <li>W czasie wypowiedzi ustnej raczej nie przerywam — zapisuję błędy i proszę o samokorektę (metoda sprawdzona).</li>
-            <li>Czasem poproszę o słuchawki (echo/szumy) — miej je pod ręką, by nie tracić jakości zajęć.</li>
+            <li><strong>2009–2012</strong> — Licencjat z italianistyki ukończony w Wyższej Szkole Studiów Międzynarodowych w Łodzi</li>
+            <li><strong>2011</strong> — Półroczne stypendium Erasmus na Università degli Studi di Macerata (Facoltà di Lettere e Filosofia)</li>
+            <li><strong>2012–2014</strong> — Magister z italianistyki ukończony na Uniwersytecie Warszawskim</li>
           </ul>
         </div>
-      </div>
 
-      <div class="ribbon ribbon--left section-play__ribbon" aria-hidden="true">
-        <div class="ribbon__inner">
-          <img src="assets/olive-oil-svgrepo-com.svg" alt="" aria-hidden="true">
-          <span>Porządek + rytm = wyniki.</span>
-        </div>
-      </div>
-    </section>
+        <div class="glassCard reveal">
+          <h3>Kursy i szkolenia metodyczne</h3>
+          <ul class="list">
+            <li><strong>2022</strong> — “Mistrz coachingu” (akredytacja ICF)</li>
+            <li><strong>2023</strong> — Nowoczesne metody nauczania języków obcych (Oświata-Lingwista)</li>
+            <li><strong>2023</strong> — Pamięć i języki: pomysły, praktyki, narzędzia (Edunation)</li>
+            <li><strong>2023</strong> — Akademia nauczania dorosłych (Edunation)</li>
+          </ul>
 
-    <!-- FORMALNOŚCI + PŁATNOŚCI + ZASADY -->
-    <section class="section section--green section-play" id="formalnosci">
-      <div class="container">
-        <div class="section__head reveal">
-          <h2>Formalności</h2>
-          <p class="muted muted--on-green">Jak często, gdzie, płatności, odwoływanie, spóźnienia, faktury, kontakt.</p>
-        </div>
-
-        <div class="grid grid--2">
-          <div class="card card--glass reveal">
-            <h3>Jak często będziemy się widywać?</h3>
-            <p>
-              Skuteczna nauka to przede wszystkim systematyczność — preferuję zajęcia raz w tygodniu (lub częściej), zawsze o stałych porach.
-              Na koniec każdego miesiąca ustalamy liczbę lekcji i staramy się jej trzymać. Odwołane spotkania staramy się odrobić.
-              Proszę o współpracę i szanowanie czasu.
-            </p>
-
-            <h3 class="mt">Gdzie będziemy mieć zajęcia?</h3>
-            <p>
-              Zajęcia prowadzę przez <strong>Microsoft Teams</strong>. Przed pierwszą lekcją wysyłam link do zaproszenia.
-              Mój login: <strong>caffe-amaro314</strong>. Możesz też dodać mnie jako Eliza Giussani.
-            </p>
-          </div>
-
-          <div class="card card--glass reveal">
-            <h3>Płatności</h3>
-            <p>Płatności dokonywane są z góry: za cały miesiąc lub co kwartał, do piątego dnia każdego miesiąca.</p>
-            <ul class="list">
-              <li><strong>Lekcje indywidualne:</strong> 150 zł / 60 minut</li>
-              <li><strong>Zajęcia grupowe:</strong> 90 zł od osoby / 60 minut</li>
-              <li><strong>Przygotowanie do egzaminów*:</strong> 180 zł / 60 minut</li>
-            </ul>
-            <p class="fine">* CILS, CELI, PLIDA, egzamin maturalny</p>
-
-            <div class="callout callout--red">
-              <strong>Czy muszę zapłacić z góry za cały miesiąc już przy pierwszej lekcji?</strong>
-              <p>Nie. Pierwszą lekcję opłacasz pojedynczo. Dopiero jeśli zdecydujesz się na współpracę, przechodzimy na płatność miesięczną lub kwartalną.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="grid grid--3 mt reveal">
-          <div class="card card--glass">
-            <h3>Odwoływanie zajęć</h3>
-            <p>Lekcje odwołujemy najpóźniej 24 godziny przed rozpoczęciem. Po tym terminie zajęcia przepadają i opłata zostaje policzona.</p>
-          </div>
-          <div class="card card--glass">
-            <h3>Punktualność i spóźnienia</h3>
-            <p>Spotkanie zaczyna się i kończy zgodnie z harmonogramem. Spóźnienie nie wydłuża lekcji. Bez informacji dopuszczalne 15 min — potem zajęcia przepadają.</p>
-          </div>
-          <div class="card card--glass">
-            <h3>Faktury</h3>
-            <p>Działalność prowadzę w UE i nie jestem vatowcem. Mogę wystawić fakturę — będzie to europejska faktura bez VAT.</p>
+          <div class="center-cta">
+            <a class="btn btn--yellow" href="#uslugi">
+              Zobacz jak mogę Ci pomóc
+              <img class="btn__icon" src="assets/arrow-03-svgrepo-com.svg" alt="" aria-hidden="true">
+            </a>
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="ribbon ribbon--right section-play__ribbon" aria-hidden="true">
-        <div class="ribbon__inner">
-          <img src="assets/speech-bubble-16-svgrepo-com.svg" alt="" aria-hidden="true">
-          <span>Preferuję kontakt: e-mail / Teams. Pilne: WhatsApp.</span>
+  <!-- USŁUGI -->
+  <section id="uslugi" class="section section--paper section-play">
+    <div class="container">
+      <div class="section__head reveal">
+        <h2>Moje włoskie usługi</h2>
+        <p class="muted">Nauczanie od A1 do C2, matura, egzaminy, uczelnia, konwersacje, tłumaczenia.</p>
+      </div>
+
+      <div class="grid grid--3">
+        <article class="card reveal">
+          <div class="card__ico"><img src="assets/pasta-svgrepo-com.svg" class="ico" alt="" aria-hidden="true"></div>
+          <h3>A1–C2</h3>
+          <p>Nauczanie na wszystkich poziomach od A1 do C2.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__ico"><img src="assets/tomato-svgrepo-com.svg" class="ico" alt="" aria-hidden="true"></div>
+          <h3>Matura</h3>
+          <p>Przygotowanie do matury podstawowej i rozszerzonej.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__ico"><img src="assets/pizza-svgrepo-com.svg" class="ico" alt="" aria-hidden="true"></div>
+          <h3>CILS / CELI / PLIDA</h3>
+          <p>Przygotowanie do egzaminów językowych CILS, CELI, PLIDA.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__ico"><img src="assets/olive-oil-svgrepo-com.svg" class="ico" alt="" aria-hidden="true"></div>
+          <h3>Uczelnia</h3>
+          <p>Przygotowanie do egzaminów i zaliczeń na uczelniach wyższych.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__ico"><img src="assets/speech-bubble-16-svgrepo-com.svg" class="ico" alt="" aria-hidden="true"></div>
+          <h3>Konwersacje</h3>
+          <p>Dużo mówienia i słuchania — tematy dopasowane do Ciebie.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__ico"><img src="assets/coliseum-rome-svgrepo-com.svg" class="ico" alt="" aria-hidden="true"></div>
+          <h3>Tłumaczenia</h3>
+          <p>Tłumaczenia i praca z tekstem — w zależności od celu.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- WSPÓŁPRACA -->
+  <section id="wspolpraca" class="section section--paper section-play">
+    <div class="container">
+      <div class="section__head reveal">
+        <h2>Jak wygląda nasza współpraca?</h2>
+        <p class="muted">Program nauczania, struktura lekcji, notatki, prace domowe, materiały.</p>
+      </div>
+
+      <div class="split">
+        <div class="panel panel--green reveal">
+          <h3>Program nauczania</h3>
+          <p>
+            To jak dokładnie wyglądają lekcje i co na nich robimy zależy od Twojego poziomu, tempa nauki,
+            potrzeb, celu oraz preferowanego sposobu uczenia się.
+          </p>
+          <p>
+            Z osobami początkującymi lub takimi, które włoski już znają, ale potrzebują uzupełnić swoją wiedzę pracuję na podręczniku
+            <strong>Nuovissimo Progetto Italiano</strong> oraz wielu innych materiałach, w tym także moich autorskich.
+          </p>
+          <p>
+            Główne obszary to przede wszystkim <strong>mówienie i słuchanie</strong>. Gdy trzeba pojawia się gramatyka (teoria + 1–2 zadania),
+            a pisanie i ćwiczenia zostają do domu.
+          </p>
+        </div>
+
+        <div class="panel panel--red reveal">
+          <h3>Czy naprawdę musimy uczyć się gramatyki?</h3>
+          <p>
+            Tak. Znajomość podstawowych zasad gramatycznych (baza) pozwala w przyszłości na samodzielne “kombinowanie” z językiem.
+            Dzięki temu rozmowy z Włochami stają się łatwe, przyjemne i bezstresowe. Wiedza gramatyczna wyrabia też nawyk autokorekty.
+          </p>
+          <p>Spokojnie — wyjątki poznajemy stopniowo w trakcie procesu.</p>
         </div>
       </div>
-    </section>
 
-    <!-- FAQ -->
-    <section id="faq" class="section section--paper section-play">
-      <div class="container">
-        <div class="section__head reveal">
-          <h2>FAQ — Najczęściej zadawane pytania</h2>
-          <p class="muted">W całości przepisane z PDF (1/3–3/3).</p>
+      <div class="grid grid--2 mt2">
+        <div class="card reveal">
+          <h3>Struktura lekcji (60 min)</h3>
+          <ul class="list">
+            <li><strong>5–10 min</strong> — rozgrzewka + powtórka</li>
+            <li><strong>~45 min</strong> — praca główna (cel + materiał)</li>
+            <li><strong>5 min</strong> — podsumowanie + plan na dalej</li>
+          </ul>
         </div>
 
-        <div class="faq reveal">
-          <details>
-            <summary>Czy muszę znać język obcy, żeby zacząć naukę włoskiego?</summary>
-            <p>Nie. Prowadzę zajęcia od poziomu całkowicie początkującego. Wszystko tłumaczę powoli i zrozumiale — krok po kroku. Znajomość innego języka może pomóc, ale nie jest konieczna.</p>
-          </details>
-
-          <details>
-            <summary>Czy mogę zacząć od zera?</summary>
-            <p>Tak. Wielu moich uczniów zaczynało od absolutnych podstaw. Wspólnie stworzymy solidne fundamenty.</p>
-          </details>
-
-          <details>
-            <summary>Jak szybko nauczę się mówić po włosku?</summary>
-            <p>To indywidualne: zależy od systematyczności, poziomu startowego, kontaktu z językiem między lekcjami i predyspozycji. Przy zajęciach raz w tygodniu i min. 2 godzinach samodzielnej pracy tygodniowo pierwsze efekty pojawiają się już po kilku lekcjach.</p>
-          </details>
-
-          <details>
-            <summary>Czy na zajęciach mówi się tylko po włosku?</summary>
-            <p>Już od początku mówię po włosku, od razu tłumacząc na polski. Z czasem coraz więcej dzieje się po włosku, a polski pojawia się tylko, gdy trzeba coś dokładnie wyjaśnić. Zależy od poziomu i potrzeb — zawsze można dopytać.</p>
-          </details>
-
-          <details>
-            <summary>Co jeszcze wchodzi w skład zajęć oprócz spotkań?</summary>
-            <p>Po każdych zajęciach otrzymujesz spersonalizowane notatki (własny słownik), ćwiczenia i — jeśli trzeba — materiały do powtórek. Sprawdzam prace domowe, wspieram i motywuję, dzielę się wskazówkami, jak utrzymać rytm nauki.</p>
-          </details>
-
-          <details>
-            <summary>Czy muszę mieć komputer? Czy tablet wystarczy?</summary>
-            <p>Tablet lub smartfon mogą wystarczyć, ale najwygodniej uczy się na laptopie (PDF, audio). Jeśli naprawdę nie ma innej możliwości — wyjątkowo WhatsApp. Docelowo pracujemy w Microsoft Teams (materiały, notatki, praca z tekstem i dźwiękiem).</p>
-          </details>
-
-          <details>
-            <summary>Czy mogę mieć zajęcia przez telefon zamiast Microsoft Teams?</summary>
-            <p>Wyjątkowo tak (WhatsApp), ale traktuję to tymczasowo. Teams daje lepsze warunki do skutecznej pracy.</p>
-          </details>
-
-          <details>
-            <summary>Czy mogę samemu wybrać temat lekcji?</summary>
-            <p>Oczywiście. Jeśli masz konkretne potrzeby (wyjazd, praca, rodzina we Włoszech), dopasuję materiały. Daj tylko wcześniej znać.</p>
-          </details>
-
-          <details>
-            <summary>Czy można zrezygnować z zajęć w trakcie miesiąca?</summary>
-            <p>Współpraca jest opłacana z góry za cały miesiąc — rezygnacja w trakcie miesiąca nie podlega zwrotowi (stały grafik i planowanie pracy).</p>
-          </details>
-
-          <details>
-            <summary>Co jeśli jadę na urlop i nie mogę uczestniczyć przez kilka tygodni?</summary>
-            <p>Krótka przerwa to żaden problem. Termin zostaje zarezerwowany, mogę przygotować lekkie materiały. Przy dłuższej nieobecności ustalamy, że stały termin wraca do puli wolnych godzin; po powrocie umawiamy się na nowo.</p>
-          </details>
-
-          <details>
-            <summary>Co jeśli nie mam czasu na pracę domową?</summary>
-            <p>Nie martw się — tempo nauki ustalamy indywidualnie. Jeśli masz intensywny czas, dopasujemy zakres materiału.</p>
-          </details>
+        <div class="card reveal">
+          <h3>Notatki i prace domowe</h3>
+          <p>
+            W czasie lekcji zapisuję nowe słówka i błędy. Po zajęciach wysyłam dokument — Twój personalizowany słownik.
+            Prace domowe dobieram do poziomu i czasu (tłumaczenia, gramatyka, krótkie wypracowania).
+          </p>
         </div>
       </div>
-    </section>
 
-    <!-- OPINIE -->
-    <section id="opinie" class="section section--red section-play">
-      <div class="container">
-        <div class="section__head reveal">
-          <h2>Poznaj niektóre opinie uczniów</h2>
-          <p class="muted muted--on-red">Wybrane cytaty — w całości z PDF.</p>
+      <div class="card reveal mt2">
+        <h3>Materiały</h3>
+        <p>
+          Nie musisz kupować książek — wszystko wysyłam z wyprzedzeniem. Materiały przez e-mail lub SwissTransfer.
+          Możesz drukować albo pracować cyfrowo — ważne, by było wygodnie i bez bałaganu.
+        </p>
+      </div>
+
+      <div class="card reveal mt2">
+        <h3>Co jeszcze musisz wiedzieć?</h3>
+        <ul class="list">
+          <li>O trudnościach informuj mnie na bieżąco — jestem po to, by pomóc.</li>
+          <li>W czasie wypowiedzi ustnej raczej nie przerywam — proszę o samokorektę.</li>
+          <li>Czasem poproszę o słuchawki (echo/szumy) — miej je pod ręką.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMALNOŚCI -->
+  <section id="formalnosci" class="section section--green section-play">
+    <div class="container">
+      <div class="section__head reveal center">
+        <h2>Formalności</h2>
+        <p class="muted muted--on">Jak często, gdzie, płatności, odwoływanie, spóźnienia, faktury, kontakt.</p>
+      </div>
+
+      <div class="grid grid--2">
+        <div class="glassCard reveal">
+          <h3>Jak często będziemy się widywać?</h3>
+          <p>
+            Skuteczna nauka to systematyczność — preferuję zajęcia raz w tygodniu (lub częściej), zawsze o stałych porach.
+            Na koniec miesiąca ustalamy liczbę lekcji i staramy się jej trzymać.
+          </p>
+
+          <h3 class="mt2">Gdzie będziemy mieć zajęcia?</h3>
+          <p>
+            Zajęcia prowadzę przez <strong>Microsoft Teams</strong>. Przed pierwszą lekcją wysyłam link.
+            Mój login: <strong>caffe-amaro314</strong>.
+          </p>
         </div>
 
-        <div class="grid grid--3">
-          <figure class="quote reveal">
-            <div class="stars" aria-label="5 gwiazdek">★★★★★</div>
-            <blockquote>
-              „Pani Eliza jest fantastyczną nauczycielką, u Niej nie ma nudnych lekcji… ma ogromną wiedzę dotyczącą Włoch i cudownie o nich opowiada. Szczerze polecam.”
-            </blockquote>
-            <figcaption>Aniela W.</figcaption>
-          </figure>
+        <div class="glassCard reveal">
+          <h3>Płatności</h3>
+          <p>Płatności dokonywane są z góry: za miesiąc lub co kwartał, do piątego dnia każdego miesiąca.</p>
+          <ul class="list">
+            <li><strong>Lekcje indywidualne:</strong> 150 zł / 60 minut</li>
+            <li><strong>Zajęcia grupowe:</strong> 90 zł od osoby / 60 minut</li>
+            <li><strong>Przygotowanie do egzaminów*:</strong> 180 zł / 60 minut</li>
+          </ul>
+          <p class="fine">* CILS, CELI, PLIDA, egzamin maturalny</p>
 
-          <figure class="quote reveal">
-            <div class="stars" aria-label="5 gwiazdek">★★★★★</div>
-            <blockquote>
-              „Najlepsza, najwspanialsza i tylko Ona! Elastyczna, a jednocześnie bardzo konkretna… Empatyczna, ale konkretna. Włoski tylko z Elizą!”
-            </blockquote>
-            <figcaption>Ania K.</figcaption>
-          </figure>
-
-          <figure class="quote reveal">
-            <div class="stars" aria-label="5 gwiazdek">★★★★★</div>
-            <blockquote>
-              „Z całego serca polecam! Zajęcia mają przemiłą atmosferę… Eliza bardzo dobrze tłumaczy gramatykę i zapisuje błędy / nowe słówka.”
-            </blockquote>
-            <figcaption>Ela W.</figcaption>
-          </figure>
-        </div>
-
-        <div class="grid grid--2 mt">
-          <figure class="quote reveal">
-            <div class="stars" aria-label="5 gwiazdek">★★★★★</div>
-            <blockquote>„Eliza jest zawsze doskonale przygotowana… Lekcje są dynamiczne… Bardzo mocno polecam!!!”</blockquote>
-            <figcaption>Ania J.</figcaption>
-          </figure>
-          <figure class="quote reveal">
-            <div class="stars" aria-label="5 gwiazdek">★★★★★</div>
-            <blockquote>„Zdecydowanie polecam Elizę… Lekcje były w przemiłej i bezstresowej atmosferze… ‘przyjemne z pożytecznym’.”</blockquote>
-            <figcaption>Lidia P.</figcaption>
-          </figure>
+          <div class="callout">
+            <strong>Czy muszę zapłacić z góry za cały miesiąc już przy pierwszej lekcji?</strong>
+            <p>Nie. Pierwszą lekcję opłacasz pojedynczo. Potem przechodzimy na płatność miesięczną lub kwartalną.</p>
+          </div>
         </div>
       </div>
-    </section>
 
-    <!-- CO MNIE WYRÓŻNIA -->
-    <section class="section section--green section-play" id="wyroznia">
-      <div class="container">
-        <div class="section__head reveal">
-          <h2>Co mnie wyróżnia?</h2>
+      <div class="grid grid--3 mt2">
+        <div class="glassCard reveal">
+          <h3>Odwoływanie zajęć</h3>
+          <p>Lekcje odwołujemy najpóźniej 24 godziny przed rozpoczęciem. Po tym terminie zajęcia przepadają.</p>
+        </div>
+        <div class="glassCard reveal">
+          <h3>Punktualność i spóźnienia</h3>
+          <p>Spotkanie zaczyna się i kończy zgodnie z harmonogramem. Bez informacji dopuszczalne 15 min — potem zajęcia przepadają.</p>
+        </div>
+        <div class="glassCard reveal">
+          <h3>Faktury</h3>
+          <p>Działalność prowadzę w UE i nie jestem vatowcem. Mogę wystawić fakturę — europejską bez VAT.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section section--paper section-play">
+    <div class="container">
+      <div class="section__head reveal center">
+        <h2>FAQ — Najczęściej zadawane pytania</h2>
+        <p class="muted">Kliknij, by rozwinąć.</p>
+      </div>
+
+      <div class="faq reveal">
+        <details>
+          <summary>Czy muszę znać język obcy, żeby zacząć naukę włoskiego?</summary>
+          <p>Nie. Prowadzę zajęcia od poziomu całkowicie początkującego. Wszystko tłumaczę krok po kroku.</p>
+        </details>
+        <details>
+          <summary>Czy mogę zacząć od zera?</summary>
+          <p>Tak. Wielu uczniów zaczynało od absolutnych podstaw.</p>
+        </details>
+        <details>
+          <summary>Jak szybko nauczę się mówić po włosku?</summary>
+          <p>To zależy od systematyczności, poziomu startowego i pracy między lekcjami.</p>
+        </details>
+        <details>
+          <summary>Czy na zajęciach mówi się tylko po włosku?</summary>
+          <p>Od początku wplatam włoski z jasnym tłumaczeniem. Z czasem coraz więcej dzieje się po włosku.</p>
+        </details>
+        <details>
+          <summary>Co jeszcze wchodzi w skład zajęć oprócz spotkań?</summary>
+          <p>Notatki po lekcji, materiały, ćwiczenia, prace domowe i wsparcie w utrzymaniu rytmu nauki.</p>
+        </details>
+        <details>
+          <summary>Czy muszę mieć komputer? Czy tablet wystarczy?</summary>
+          <p>Najwygodniej jest na komputerze, ale tablet może wystarczyć. Docelowo pracujemy w Teams.</p>
+        </details>
+        <details>
+          <summary>Czy mogę mieć zajęcia przez telefon zamiast Microsoft Teams?</summary>
+          <p>Wyjątkowo tak (WhatsApp), ale Teams daje lepsze warunki do nauki.</p>
+        </details>
+        <details>
+          <summary>Czy mogę samemu wybrać temat lekcji?</summary>
+          <p>Tak. Jeśli masz konkretny cel (wyjazd, praca), dopasuję materiały.</p>
+        </details>
+        <details>
+          <summary>Czy można zrezygnować z zajęć w trakcie miesiąca?</summary>
+          <p>Współpraca jest planowana z wyprzedzeniem (stały grafik) — zasady omawiamy indywidualnie.</p>
+        </details>
+        <details>
+          <summary>Co jeśli jadę na urlop i nie mogę uczestniczyć przez kilka tygodni?</summary>
+          <p>Krótka przerwa jest OK. Przy dłuższej ustalamy plan powrotu i terminy.</p>
+        </details>
+        <details>
+          <summary>Co jeśli nie mam czasu na pracę domową?</summary>
+          <p>Tempo nauki dopasujemy — ważna jest regularność i realny plan.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- OPINIE -->
+  <section id="opinie" class="section section--red section-play">
+    <div class="container">
+      <div class="section__head reveal center">
+        <h2>Poznaj niektóre opinie uczniów</h2>
+        <p class="muted muted--on">Wybrane cytaty.</p>
+      </div>
+
+      <div class="grid grid--3">
+        <figure class="quote reveal">
+          <div class="stars" aria-label="5 gwiazdek">★★★★★</div>
+          <blockquote>
+            „Pani Eliza jest fantastyczną nauczycielką, u Niej nie ma nudnych lekcji… ma ogromną wiedzę dotyczącą Włoch i cudownie o nich opowiada. Szczerze polecam.”
+          </blockquote>
+          <figcaption>Aniela W.</figcaption>
+        </figure>
+
+        <figure class="quote reveal">
+          <div class="stars" aria-label="5 gwiazdek">★★★★★</div>
+          <blockquote>
+            „Najlepsza, najwspanialsza i tylko Ona! Elastyczna, a jednocześnie bardzo konkretna… Włoski tylko z Elizą!”
+          </blockquote>
+          <figcaption>Ania K.</figcaption>
+        </figure>
+
+        <figure class="quote reveal">
+          <div class="stars" aria-label="5 gwiazdek">★★★★★</div>
+          <blockquote>
+            „Z całego serca polecam! Zajęcia mają przemiłą atmosferę… Eliza bardzo dobrze tłumaczy gramatykę i zapisuje błędy / nowe słówka.”
+          </blockquote>
+          <figcaption>Ela W.</figcaption>
+        </figure>
+      </div>
+
+      <div class="grid grid--2 mt2">
+        <figure class="quote reveal">
+          <div class="stars" aria-label="5 gwiazdek">★★★★★</div>
+          <blockquote>„Eliza jest zawsze doskonale przygotowana… Lekcje są dynamiczne… Bardzo mocno polecam!!!”</blockquote>
+          <figcaption>Ania J.</figcaption>
+        </figure>
+        <figure class="quote reveal">
+          <div class="stars" aria-label="5 gwiazdek">★★★★★</div>
+          <blockquote>„Lekcje były w przemiłej i bezstresowej atmosferze… ‘przyjemne z pożytecznym’.”</blockquote>
+          <figcaption>Lidia P.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- CO MNIE WYRÓŻNIA -->
+  <section id="wyroznia" class="section section--green section-play">
+    <div class="container">
+      <div class="section__head reveal center">
+        <h2>Co mnie wyróżnia?</h2>
+      </div>
+
+      <div class="grid grid--2">
+        <div class="glassCard reveal">
+          <h3>🎓 Ponad 10 lat doświadczenia</h3>
+          <p>Z dwoma krótkimi przerwami na urlop macierzyński — do dziś nauczyłam mówić po włosku ponad <strong>300 osób</strong>.</p>
         </div>
 
-        <div class="grid grid--2">
-          <div class="card card--glass reveal">
-            <h3>🎓 Ponad 10 lat doświadczenia</h3>
-            <p>Z dwoma krótkimi przerwami na urlop macierzyński — do dziś nauczyłam mówić po włosku ponad <strong>300 osób</strong>.</p>
-          </div>
-
-          <div class="card card--glass reveal">
-            <h3>🎯 Indywidualne podejście</h3>
-            <p>Różne metody dopasowane do predyspozycji, preferencji i zainteresowań. Jeśli kino Cię nie kręci — wybierzemy inne tematy.</p>
-          </div>
-
-          <div class="card card--glass reveal">
-            <h3>🧠 Świetna organizacja</h3>
-            <p>Zajęcia nie są przypadkowe — dopasowane do tempa i poziomu. Dzięki temu z tygodnia na tydzień osiągasz coraz lepsze wyniki.</p>
-          </div>
-
-          <div class="card card--glass reveal">
-            <h3>👂 Uważne słuchanie</h3>
-            <p>Wychwytuję i wskazuję błędy językowe, które stopniowo eliminujesz, by z czasem mówić jak prawdziwi Włosi.</p>
-          </div>
-
-          <div class="card card--glass reveal">
-            <h3>✍️ Personalizowane notatki</h3>
-            <p>To ja robię notatki w czasie lekcji — po zajęciach dostajesz swój słownik w ciągu kilku godzin. 60 minut myślisz wyłącznie po włosku.</p>
-          </div>
-
-          <div class="card card--glass reveal">
-            <h3>🎥 Wszechstronność i pasja</h3>
-            <p>Poza lekcjami zajmuję się fotografią i produkcją filmową, prowadzę bloga i jestem autorką przewodnika o Reunionie. Nie będziesz się nudzić.</p>
-          </div>
+        <div class="glassCard reveal">
+          <h3>🎯 Indywidualne podejście</h3>
+          <p>Różne metody dopasowane do predyspozycji i zainteresowań. Jeśli kino Cię nie kręci — wybierzemy inne tematy.</p>
         </div>
 
-        <div class="card card--glass card--wide reveal">
+        <div class="glassCard reveal">
+          <h3>🧠 Świetna organizacja</h3>
+          <p>Zajęcia nie są przypadkowe — dopasowane do tempa i poziomu. Dzięki temu z tygodnia na tydzień są wyniki.</p>
+        </div>
+
+        <div class="glassCard reveal">
+          <h3>👂 Uważne słuchanie</h3>
+          <p>Wychwytuję i wskazuję błędy językowe, które stopniowo eliminujesz.</p>
+        </div>
+
+        <div class="glassCard reveal">
+          <h3>✍️ Personalizowane notatki</h3>
+          <p>To ja robię notatki w czasie lekcji — po zajęciach dostajesz swój słownik. 60 minut myślisz po włosku.</p>
+        </div>
+
+        <div class="glassCard reveal">
+          <h3>🎥 Wszechstronność i pasja</h3>
+          <p>Poza lekcjami: fotografia i produkcja filmowa, blog, przewodnik o Reunionie. Nie będziesz się nudzić.</p>
+        </div>
+
+        <div class="glassCard glassCard--wide reveal">
           <p class="big-quote">
-            Poza tym włoska przestrzeń, którą tworzę dla swoich uczniów oparta jest na życzliwości, szacunku i zaufaniu — gości w niej cierpliwość,
-            motywacja, pozytywne nastawienie, empatia oraz nieustanna wiara w ucznia!
+            Włoska przestrzeń, którą tworzę dla swoich uczniów oparta jest na życzliwości, szacunku i zaufaniu —
+            gości w niej cierpliwość, motywacja, empatia oraz wiara w ucznia.
           </p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- FINAL CTA + CONTACT -->
-    <section id="kontakt" class="section section--paper section-play">
-      <div class="container">
-        <div class="cta reveal">
-          <h2>Miłośniczko, Miłośniku języka włoskiego oraz Włoch!</h2>
-          <p class="muted">
-            Jeśli masz w sobie gotowość i wewnętrzną motywację — zapraszam Cię do mnie na zajęcia.
-            Będę Twoim nauczycielem oraz mentorem, który wskaże kierunek i mocno wesprze w tej językowej przygodzie.
-          </p>
+  <!-- KONTAKT -->
+  <section id="kontakt" class="section section--paper section-play">
+    <div class="container">
+      <div class="cta reveal">
+        <h2>Miłośniczko, Miłośniku języka włoskiego oraz Włoch!</h2>
+        <p class="muted">
+          Jeśli masz gotowość i motywację — zapraszam Cię do mnie na zajęcia.
+          Będę Twoim nauczycielem oraz mentorem, który wskaże kierunek i wesprze w tej językowej przygodzie.
+        </p>
 
-          <div class="cta__row">
-            <!-- Remplace l’email si besoin -->
-            <a class="btn" href="mailto:hello@example.com">E-mail</a>
-            <a class="btn btn--ghost" href="https://wa.me/262692072259" target="_blank" rel="noopener">WhatsApp</a>
-            <a class="btn btn--ghost" href="#formalnosci">Teams / Formalności</a>
-          </div>
-
-          <div class="contactgrid">
-            <div class="contactitem">
-              <strong>Tel:</strong> +262 692 07 22 59
-            </div>
-            <div class="contactitem">
-              <strong>Teams login:</strong> caffe-amaro314
-            </div>
-          </div>
-
-          <p class="fineprint">© <span id="year"></span> Dolce Cartolina</p>
+        <div class="cta__row">
+          <a class="btn" href="mailto:hello@example.com">E-mail</a>
+          <a class="btn btn--ghost" href="https://wa.me/262692072259" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn btn--ghost" href="#formalnosci">Teams / Formalności</a>
         </div>
-      </div>
-    </section>
-  </main>
 
-  <script src="assets/js/main.js"></script>
+        <div class="contactgrid">
+          <div class="contactitem"><strong>Tel:</strong> +262 692 07 22 59</div>
+          <div class="contactitem"><strong>Teams login:</strong> caffe-amaro314</div>
+        </div>
+
+        <p class="fineprint">© <span id="year"></span> Dolce Cartolina</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<script src="assets/js/main.js"></script>
 </body>
 </html>
